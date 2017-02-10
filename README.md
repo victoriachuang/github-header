@@ -1,2 +1,2 @@
 # github-header
-Removes dark Github header
+Gets rid of the ominous-looking dark header.
