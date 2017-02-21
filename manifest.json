@@ -10,5 +10,10 @@
 			"js": ["content_script.js"],
 			"run_at": "document_end"
 		}
-	]
+	],
+	"icons": {
+		"16": "./favicon/favicon-16.png",
+		"48": "./favicon/favicon-48.png",
+		"128": "./favicon/favicon-128.png"
+	}
 }

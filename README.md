@@ -1,5 +1,7 @@
 # github-header
-Get rid of Github's new ominous-looking dark header.
+As of a week ago, Github's dark header is no longer a class you can remove. This extension now makes the header color a random color.
+
+Requests for colors welcome!
 
 ### Installation instructions:
 1. Clone the repository to your machine.
