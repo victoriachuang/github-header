@@ -22,5 +22,6 @@ var colors = [
 ]
 
 var randomColor = colors[Math.floor((Math.random() * colors.length))];
+document.querySelector('.notification-indicator .mail-status').style.borderColor = randomColor;
 document.getElementsByClassName('header')[0].style.backgroundColor = randomColor;
 document.getElementsByClassName('header-search-scope')[0].style.borderRightColor = randomColor;
