@@ -6,7 +6,7 @@
 	"content_scripts":
 	[
 		{
-			"matches": ["*://github.com/*"],
+			"matches": ["*://github.com/*", "*://gist.github.com/*"],
 			"js": ["content_script.js"],
 			"run_at": "document_end"
 		}
