@@ -8,6 +8,7 @@
 		{
 			"matches": ["*://github.com/*", "*://gist.github.com/*"],
 			"js": ["content_script.js"],
+			"css": ["styles.css"],
 			"run_at": "document_end"
 		}
 	],
