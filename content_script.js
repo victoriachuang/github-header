@@ -43,7 +43,7 @@ var opts = {
 
 function pickColor() {
   var randomColor = colors[Math.floor((Math.random() * colors.length))];
-  document.getElementsByClassName('header')[0].style.backgroundColor = randomColor;
+  document.getElementsByClassName('Header')[0].style.backgroundColor = randomColor;
   document.getElementsByClassName('header-search-scope')[0].style.borderRightColor = randomColor;
   document.getElementsByClassName('mail-status')[0].style.borderColor = randomColor;
 }
@@ -56,7 +56,7 @@ function alternateColors() {
 };
 
 function rotateHeader() {
-  var header = document.querySelector('.header');
+  var header = document.querySelector('.Header');
   header.style['z-index'] = 1000;
   header.style.position = 'relative';
   header.style.animation = 'circle ' + opts.animationSpeed + ' infinite linear';

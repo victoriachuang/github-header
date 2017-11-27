@@ -1,5 +1,5 @@
 # github-header
-As of a week ago, Github's dark header is no longer a class you can remove. This extension now makes the header color a random color.
+Github has changed their classname once again! This extension now makes the header color a random color, works as of November 2017.
 
 Requests for colors welcome!
 
