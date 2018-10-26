@@ -66,6 +66,15 @@ const startTheParty = () => {
   rotateHeader();
 };
 
+const removeSlashImage = () => {
+  const slashImage = document.getElementsByClassName(
+    'header-search-key-slash'
+  )[0];
+  slashImage.parentNode.removeChild(slashImage);
+};
+
+removeSlashImage();
+
 if(opts.partyMode) {
   startTheParty()
 } else {
