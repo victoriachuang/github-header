@@ -30,21 +30,25 @@ const COLORS = [
   "#0065A9", // royal blue
 
   // purples
-  "#9D549C", // beet
+  "#9D549C" // beet
 ];
 
 const getOption = option => localStorage[`${lsNamespace}.${option}`];
-const lsNamespace = 'CE.GITHUB_HEADER';
+const lsNamespace = "CE.GITHUB_HEADER";
 const opts = {
-  partyMode: getOption('PARTY_MODE') === 'true',
-  colorChangeDelay: Number(getOption('COLOR_CHANGE_DELAY')) || 200,
-  animationSpeed: getOption('HEADER_SWIRL_DURATION') || '1s'
+  partyMode: getOption("PARTY_MODE") === "true",
+  colorChangeDelay: Number(getOption("COLOR_CHANGE_DELAY")) || 200,
+  animationSpeed: getOption("HEADER_SWIRL_DURATION") || "1s"
 };
 
 const pickColor = () => {
-  const randomColor = COLORS[Math.floor((Math.random() * COLORS.length))];
-  document.getElementsByClassName('Header')[0].style.backgroundColor = randomColor;
-  document.getElementsByClassName('mail-status')[0].style.borderColor = randomColor;
+  const randomColor = COLORS[Math.floor(Math.random() * COLORS.length)];
+  document.getElementsByClassName(
+    "Header-old"
+  )[0].style.backgroundColor = randomColor;
+  document.getElementsByClassName(
+    "mail-status"
+  )[0].style.borderColor = randomColor;
 };
 
 const alternateColors = () => {
@@ -55,10 +59,10 @@ const alternateColors = () => {
 };
 
 const rotateHeader = () => {
-  const header = document.querySelector('.Header');
-  header.style['z-index'] = 1000;
-  header.style.position = 'relative';
-  header.style.animation = 'circle ' + opts.animationSpeed + ' infinite linear';
+  const header = document.querySelector(".Header");
+  header.style["z-index"] = 1000;
+  header.style.position = "relative";
+  header.style.animation = "circle " + opts.animationSpeed + " infinite linear";
 };
 
 const startTheParty = () => {
@@ -68,15 +72,15 @@ const startTheParty = () => {
 
 const removeSlashImage = () => {
   const slashImage = document.getElementsByClassName(
-    'header-search-key-slash'
+    "header-search-key-slash"
   )[0];
   slashImage.parentNode.removeChild(slashImage);
 };
 
 removeSlashImage();
 
-if(opts.partyMode) {
-  startTheParty()
+if (opts.partyMode) {
+  startTheParty();
 } else {
   pickColor();
 }
