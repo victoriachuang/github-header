@@ -43,8 +43,8 @@ const opts = {
 
 const pickColor = () => {
   const randomColor = COLORS[Math.floor(Math.random() * COLORS.length)];
-  document.getElementsByClassName(
-    "Header-old"
+  document.getElementsByTagName(
+    "header"
   )[0].style.backgroundColor = randomColor;
   document.getElementsByClassName(
     "mail-status"
